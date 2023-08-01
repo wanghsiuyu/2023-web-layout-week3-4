@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAIAAAABlV4SAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphZDg5NTUzZi05OTBlLTJhNGItYmYxYy1hZjEwYWNhOWRlOGYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTI3RDUyRjYwRTQ0MTFFREE4RUJCMzAxNDkyODBCMkIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTI3RDUyRjUwRTQ0MTFFREE4RUJCMzAxNDkyODBCMkIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Mzc3ZWU0ZjItZDRmNS01NDRhLTk5MzgtZDFhMDY0ZjUzMGFiIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6Njc1NDRiMzQtZjVhNC03MTRmLThlY2ItOTBlYmMxOTdiNmQyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+K1XexAAACjdJREFUeNrsWglwE9cZfntoLVuSJdkSxoeML8BgjDEmhMsITAzlCKEUsLlKDW3DPTQzNJChlCN0QkgdpiFO6BBKZ0IBBwIl4INjCAHMFQ4bbDAYY3zIBzY+dO+udvuvlhgoli1RSIcZ7Wist293/33ff37/s7BsCkOv+YGj1//wYvBi8GLwYvBi8GLwYvBi8GLwYngdDtLTB3iO51nEO8cYhnAC9PAiHQjv4HnHU3JI59erxQBvZBCHEOVLSnXBEqUScRz96JG1ro6leQGIm70UaIARvikZJe0eLFEoeIfD3tRoq3vIcp7I8RQDR/OgMO3woT1mz+mmH+UXHk7KZDyspq3NVFZWm5/3YPfXzbdKSRxhZGcrcNA8XA4eM7rHrNmaEcl+YWGEry/PcUxrq7G01JB7tHL37tbyCpJAGOEBEqzLXhTULA8PS/j44/C0mS4XZzbfzfq8eMM6xmQlXAhkaF4V22vAlk9CJr3tSg7T0lyamVmy+SOeZt03SBcYAIB26JvD9mX76cLFmZaiwkeXLlmqqzCCkEfHaIYMlUVFiZeazhecmzHdUm14HgYACB2XOvTr3ZRGK840X7nSdPmSrdaAU5SiZ2/NsKG+YTrxUl1+XsGsmcyjFjdhdIYBTK8eED/6xCkqMNC5xHM31q17+P0phna03+OjkIVOmRK/boOIpKXw+qkxKXRzM/6UU4EigvQj9Dl5hJ8MTuuPH7u5cWNTwVn2iRgkVSvD09L6rV0nDQ6G04enT52eMIGz29xxKmK6i5sgb5Byv5FHc2UREXB678usc+kz2+6U4RhPkGCDxx+Oppuu36jK3hswMFEWGSXt3l3eI7zymwM4JCunYI7lpdpAfe4xH6cFbn206WLGfNODSoJAz8ix2houXzEcPKAdMcI3JEQWEUn5K6pz8trlvEh9ACX1WrZM2S8exlX79lxatASxDAlGezaTgp4kFGarazg7dSoYAWZ0aTNDxo9lGf6xMTkU98EHkAZgXJa17drqNRiOOpBDYhSFGcsrfpg8yXz/PszELFmmHTzQ8ZMcjzGAEaQqRczipTC21dZeXb4MR53lHAgAe6vx6uJ3eZaF095/eE/I9TwPRpCHBUVkLIBJ4507he+vFHKXa/cAbGZD/bUVS51Lw3suX8G7EQ8dY3A4ULfkZN/QMBiX79huamjqMrxICaovuAThCGNtsl4RGQ71BIzQPXWcxF8Jk3c/22o32TpPvnBISFRzJOfRxQswDh433lejgsyOOOfHMzsgpBk23OnOnOG7w4Rb2QGDp6oPHhCESqXqpEFwCuvVjkgWxNhsdfm5bsnBMUBec/iQUAc1GmV8PO+c7IQNdFzj4HZZZCQM6EdN5ooKN8kE6KPtVok4Hvi3bX3XrhfkOFOCtabGajBghHv5HqHWG0Xi+M1/7oYKCFPG27fOz5whaPe51bjEQMiEPMhaLA67zX1m6LBYIAzAJsAj4PMkQ1gtHEO7T4hYs1kc+Ol0SKdzRgfumR0ALWs0CpflCsLPjzVakXsqJBUKkbqZ7pVZagwwUvbrRwUESORygvJhrXY3UQh8zHm0lZT4hoVJ/P0Zkwk4YoeWdBkPprK7gkeq1VCMOd6tFwMjVPVPEMfXViw/rtfn6/WVe/8llLCQUL/wHrzDPVqIkDoxSRz/uPC3lgcVThrSwnGexDTMPjx7RoxU3dRpbr2a5+Ep3bQZgieYTFArSKecxrM/CAIpKmTyO6xbmuBJCR465ZcwhNUDNZb1ECLKUlXJo475uQsMBGo8VwD+AOPIjAXKSB3wjs5fzTAoZHyqVj9KYBMnjpmqanEJBtWg7sQJ+8MGmOy5dLlMq+a6kkOzKGLWLGV8f6G27s8GRyD9/UWexnuUW6EM2c22O5/+VXBNtfqN7Ttwiuzk9QK3DQtO+vxLUU+lmZ9gzswA1cDysBnKM5xBtUna9gWI4FyXXqCGAX16JWzJFOxht5Vu/TRk0uTHhPLiBdxTrkGSqGzHV41OjwpKHTt83z4qUA3v4FkeIb7dfwAYTfPKPr31R3KAL4mEov7MeULy2OjQDNzOzGy9eUOgITPShuzaCRnPlRzt4EEjj+T4aAVmBUzeUl0Xni4QftPdOy1FRQThIQYMxzg7c+HXc8WQCp0yNfX8heh5cyVqFUsLCoMPVGI/XWj8qj++dbZAmTAAbms4dfL6ypXCy7AnJmXazOdnpYseFTEvI/XcuYi0GaS/ol0OxyB5TFTihxtTTp2WRUXDbdX7swv/sjlyTrqfMxiq9n9DW2jkgqR03T8oY3sN27tXlZAozkCpAtcEYBgpkUdHqwckSlQq8VLNwW8vzs9gWtqeJyYgJzApcdievfKevcQZS1UVFDL4S0il8pgYkCNWJDju79p5eeEiUO/4q4WK2FiH1ZqfEGcsu49LXgiD2EVQKv+4tWujf/cuKZd3eA8spWTThvKdOzmGI30wnu9YHb5Bmvj1GyLnZQAZ6VCOufxe8aYPy3fuggw2cOO6vmv+LDrnpSXLJK7Xibnzf1HwXZZDqt7RkDqDxrwFaqNUap5z0E1NrSUlhqNHDXm5Eelp3cf+4szbE1mLzZXCIJqh1Kj79dFNm95tdArED6VScgxrb2wEmxiOfFfz70O25jYoA7pxY5KP5GEkaa+vzx/Y31rXgJP/G4b2nQEoFODqlEoGdZR3cHRLM2Oy0wglrV0Tt36j4LjZewtmz0Ys55rnQviiJ3L8lRzLQP2iLcJuB4HDo0gzMEGfd1yM7PPp0+7vOyDpdJEu+7gOEy40XNDBOOwM3WxkjFD8HTiJQEHAC0MmTqACNcq4fsrY3mAW1srgHUvGnpHTYmRNFp7jII8Bl2McqPuIYcmHDkuDgoQcvWVzydbPJJIuWjnP9/kwYRGgZnAYoZtxnhorKs9MecdaXeVMoOkpJ04GDOhPCwmHd0sOLkSLg0WxC38/Ku+YSBbv/+Or66tWkSTqshf1wA6daYLALHWN0CEEpaSADwBLi5w7l/TxaS0ptreZwXUwZ7J+np5wrND08hzSDhn8xt+391rxHrASMY5/XLQYQ25tNGEv8bcOzsyjHZT1RdjUX4kztlrDgz17qr/dD+mYNlr/yygQEr4hQZrkkRGz54RMnISc7Bq4VtHq90u3ZRFu75RhL/f3GiIfiVqQEfentWJ5+ilplrcU3zSXldmbGqHnBj7vGxIKuV/ZNw6Yeftttbk5RatXNRXekEg82H7FXv5vTjieYZGvJiAqY37kbzL8+/bt+gm7vf7kibtZ2wxH88QdBs8i9BX9boZnBEJEyXygL4e6oRkyRBYd7RMQgPtIxTYdOjVbfV1rcXHD6e/rj+W3FN/mnRsLL7D7jb3S3/7wDki/ArMDx/YJUFKBgdDoQWYFxUNNgNJGm+28MzBwyc+wd/9CBwQlSTxOQXRzq72plX+qZYfGkqRQ17nz/4vhmWpAoldkce//47wYvBi8GLwYvBi8GLwYvBi8GLwYfp7jPwIMAMx7bZ8nlHeIAAAAAElFTkSuQmCC" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>眼鏡形象官網</title>
+    <script type="module" crossorigin src="/2023-web-layout-week3-4/assets/main-1d500499.js"></script>
+    <link rel="stylesheet" href="/2023-web-layout-week3-4/assets/main-67072b28.css">
+  </head>
+
+  <body>
+    <header class="bg-primary">
+  <div class="container header">
+    <h1>
+      <a href="index.html" title="眼鏡官網" class="header-logo">眼鏡形象官網</a>
+    </h1>
+    <nav>
+      <ul class="header-menu">
+        <li><a href="product-optical.html">系列鏡框</a></li>
+        <li><a href="location.html">門市據點</a></li>
+        <li><a href="blog.html">部落格</a></li>
+        <li><a href="qa.html">常見問題</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <div class="page-bg">
+        <div class="container">
+          <h2 class="page-title">門市據點</h2>
+          <div class="row">
+            <div class="col-4 col-lg-8 col-md-12">
+              <div class="select-city">
+                <label for="city">選擇地區</label>
+                <select id="city">
+                  <option value="台北市">台北市</option>
+                  <option value="台中市">台中市</option>
+                  <option value="高雄市">高雄市</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <ul class="location-card row">
+            <li class="col-4 col-lg-6 col-md-12">
+              <img src="/2023-web-layout-week3-4/assets/store-1-e8e7cac3.png" alt="store" />
+              <h3 class="location-card-title">台北中山旗艦店</h3>
+              <div class="location-card-body">
+                <p>
+                  <span class="material-symbols-outlined"> call </span>
+                  <span>電話：(02)000-1234</span>
+                </p>
+                <p>
+                  <span class="material-symbols-outlined"> schedule </span>
+                  <span>營業時間：10:00-21:00</span>
+                </p>
+                <p>
+                  <span class="material-symbols-outlined"> location_on </span>
+                  <span>地址：台北市中山區南京東路25巷2-1號</span>
+                </p>
+              </div>
+              <a href="location-detail.html" class="location-detail-btn"
+                >詳細資訊</a
+              >
+            </li>
+            <li class="col-4 col-lg-6 col-md-12">
+              <img src="/2023-web-layout-week3-4/assets/store-2-e9ba0027.png" alt="store" />
+              <h3 class="location-card-title">台北綠園店</h3>
+              <div class="location-card-body">
+                <p>
+                  <span class="material-symbols-outlined"> call </span>
+                  <span>電話：(02)000-2345</span>
+                </p>
+                <p>
+                  <span class="material-symbols-outlined"> schedule </span>
+                  <span>營業時間：10:00-21:00</span>
+                </p>
+                <p>
+                  <span class="material-symbols-outlined"> location_on </span>
+                  <span>地址：台北市中正區復興南路 132-1 號</span>
+                </p>
+              </div>
+              <a href="#" class="location-detail-btn">詳細資訊</a>
+            </li>
+            <li class="col-4 col-lg-6 col-md-12">
+              <img src="/2023-web-layout-week3-4/assets/store-3-0f3830b0.png" alt="store" />
+              <h3 class="location-card-title">台中清水旗艦店</h3>
+              <div class="location-card-body">
+                <p>
+                  <span class="material-symbols-outlined"> call </span>
+                  <span>電話：(02)000-1234</span>
+                </p>
+                <p>
+                  <span class="material-symbols-outlined"> schedule </span>
+                  <span>營業時間：10:00-21:00</span>
+                </p>
+                <p>
+                  <span class="material-symbols-outlined"> location_on </span>
+                  <span>地址：台中市清水區經南一路 23 號 8 樓</span>
+                </p>
+              </div>
+              <a href="#" class="location-detail-btn">詳細資訊</a>
+            </li>
+            <li class="col-4 col-lg-6 col-md-12">
+              <img src="/2023-web-layout-week3-4/assets/store-4-64d480b6.png" alt="store" />
+              <h3 class="location-card-title">高雄中正形象店</h3>
+              <div class="location-card-body">
+                <p>
+                  <span class="material-symbols-outlined"> call </span>
+                  <span>電話：(07)000-2345</span>
+                </p>
+                <p>
+                  <span class="material-symbols-outlined"> schedule </span>
+                  <span>營業時間：10:00-21:00</span>
+                </p>
+                <p>
+                  <span class="material-symbols-outlined"> location_on </span>
+                  <span>地址：高雄市苓雅區中正路 38 號 12 樓</span>
+                </p>
+              </div>
+              <a href="#" class="location-detail-btn">詳細資訊</a>
+            </li>
+            <li class="col-4 col-lg-6 col-md-12">
+              <img src="/2023-web-layout-week3-4/assets/store-5-6f093e06.png" alt="store" />
+              <h3 class="location-card-title">高雄夢時代店</h3>
+              <div class="location-card-body">
+                <p>
+                  <span class="material-symbols-outlined"> call </span>
+                  <span>電話：(07)000-1234</span>
+                </p>
+                <p>
+                  <span class="material-symbols-outlined"> schedule </span>
+                  <span>營業時間：10:00-21:00</span>
+                </p>
+                <p>
+                  <span class="material-symbols-outlined"> location_on </span>
+                  <span>地址：高雄市前鎮區中華一路 63 號 6 樓</span>
+                </p>
+              </div>
+              <a href="#" class="location-detail-btn">詳細資訊</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-primary">
+  <div class="container">
+    <div class="footer-info">
+      <div>
+        <ul class="footer-menu-list">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="product-optical.html">系列鏡框</a></li>
+          <li><a href="location.html">門市據點</a></li>
+          <li><a href="blog.html">部落格</a></li>
+          <li><a href="qa.html">常見問題</a></li>
+        </ul>
+        <ul class="footer-contact-list">
+          <li>
+            <a href="tel:+88680000000">
+              <span class="material-symbols-outlined"> call </span>
+              0800-000-000
+            </a>
+          </li>
+          <li>
+            <a href="mailto:glasses@business.com">
+              <span class="material-symbols-outlined"> mail </span>
+              glasses@business.com
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer-social-list">
+        <li>
+          <a href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAe1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////NgkbwAAAAKXRSTlMAED9vf7/P/++fIN9fMI+vQHDwwNBQgGCQoLAnBU4KYhF1FpIenBST4NjHe8YAAAIaSURBVHgB7dYFsuM6EIXh06E2RPeZIoff8Hj/GxxGZ+wjSqG/oov6S4aOsHC3WMhqvdlud/pFtt3mm1WBhFabrT4o870gBfOS6ZT/9oi13+msbCNRy5dKRSSqnTrJ1gghL+psZ+DNlOrDexNr9bQV+MiViLtMstMAmUmwfnyBrx9f2CoRWcg1QilganXQtN91OrYDYZTqaoPfqoP+xWKWlEq0FUb0bwZzrBIWD3xuQ8Gu/QE0oDbiCe3hEMgKTKl03hEuAT2FbqARt4AWgRuwIAG2hTMJiGsgk6BHqIVrQGs+JPgVkn2+/UbVcWDsSKDCn/pMZxTkCvF/6vUBu0a9EviDZP736+wTOCiBR5kSXkPxgrGrJg3cMHZPG/gfY6/SBl5j7E3awFuMvUsbeL8EkgVaMPbZgfbZgfLZAXUMfPAMkMPsR9dRQQMH11FxDwxY12F3DQycXMc1hrBA6/qBg3NYwP0jsw4KCL2y5NhSbn7BH6rND7n7sQVdwmFXkKNjbGAgh9/oQE2O79EBwT9VqQInTOgSBQpMqNIETpjUJgkUZLjHBixmHOMDA+bIEB2oMMvEBiyIOi7QgjrFBAYBJV14oDGAe4EH+Pq0QAJkfVIgAbI+cfIPdAY+rG+gFfipGq+AhTc58QC7PETVuQWaGqH6gQeaoyBC380HGiuIZE7NZODcI4nq2D0GmlMvSKiq//ruUGCxWDj6DFdye+ioNlViAAAAAElFTkSuQmCC" alt="fb" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAeFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////GqOSsAAAAKHRSTlMAPzBvn7//749fIEDfEGDgwKBwgLDwUM/Qf5ACCRMYHa9PFSw8KBwM90qh6AAAAuxJREFUeAHt2OditCoQBuBZgsMuCOpa03ty/1d4GmKaAwLn6/v8tbwoHTg5OQnaBTBIxc54gZuIYn+QEEdxgXHKfUTGocQUhYJNWIGpuIawM8wgFIRwzGPi31/VtHCC5/1Vc1QSwphqux7fDEAb0OkbBjGGGh0hgSIFzjoJsVSFsxEoDc6OkEB3oWpgG1tCsIAicL2FVJO3hBqtGiIN++Kc2Ur01oJBS0Gc7l21tWhJ+kacIM7F+3JJXysRSTWscVa/L2XnaUMSoih04F9Huh0NW/6Q3O122hfA0LqEL1r3cQR94CNaxTmjfhGgdUVWVksU/dMcWp5rV7CPjW8iA2pPgOb4hThfaabLa67JAAVfGYFrRjZXQ9u1ElxcQgBHgjArVUkGjFQAR5qJCEAigKOPIQJuNge0uJgu/ruoh6bHBVu//5YMkFRHrQZY6HaJKHVkAHygS5xdfLowERciA1q6NhucsYwALTxTVI1WkxFg1t7h6AotmRzg+kavvauoY3KA9K8C3E8akwMMWhpWENeHmIA2sMzQK51ThQLoEZz+R8fMABMKaDMDFFDanz0g/hf9+ErOb6bDN+lo32qoKNxiMDXAraLEtxrs4IgWhxW6zB+ude+ZcO7Qar7RlMkTp0xi1sL9pwtj6qQvqb1/qWChzwXOeh0ZoFZW9bNx3hbc8xIXCjIDoMEPxLal4wN8MREB0EUufuOX7w0SegN5AY7pcc3E6N32ddwWSjYrxW99I/h1eBPoj6haDatGtwmM38aaZkKrvhiAgmTA4JZpPkwpJcFD0htxhpaGHGauIFjRu6adznsY4q4VkIw+zok/kCJ4D6Q0Zn+CFN4jm2b5vlQFeutR5R5rcrQqIHRZCZoHH5c9zu40xFIjziYgGXTEXkKM+zt0ehk4HHbG/WEHG+jdGS/J4306wSkLH0FPcnRCFgMhR8zQKwhjE6bqNGxiKkxRK9hsaHqMU11IiKPlI1ObPLHnl1f4gU5OTv4GYulZF3YBhIwAAAAASUVORK5CYII=" alt="ig" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAVFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////8wXzyWAAAAHHRSTlMAP19/r+//3zDPQGCwoMCAkNDwcBDgIFC/j59v4ENljAAAAn5JREFUeAHt2dFuqzgUheGV9HhhbMDgGCDJ+7/nCA0ZmmmAbUNPVSnfFVJV/pot3+zi7e23Op0/op1PEDr/UUyi/pwlr8+4Q7aV0Dl3yjVWGMXdlMEiy0NYLDA8iMFLWvEgSuOVnIfJBQM4fgwZD5QlHyD9CAUPVeL/FLdUlftXXTXcouLugC+txhNzKeLugl17u8YrwRYRQ3Bc0NqARV3JJU4W8BbrunpXoAzYpKvkgO8h4hIDTYCQ8SmBIkBM+/hAiRjBxwaagCjaxwXagEgmLqARzcUEHBI08kAbkMDIAxZJCmnAByQx0kCNRI0woDGph6F//Hx87IbhipEdBov+y52sZYEWDxXpPj+ax3wc6eZfqTDRskC1GlB6OQBZwK0GmIc50JiRnocgClzWA7zNgQrPKlHAbATY/xfIPkYWD+UBgZJU3dIM3AGB0JD5UqA6YAbQnlRTwFejS2TArQdgSS4MOYu/B7fTKHwOoCCfhtxjEigKqK8ndk+B0PL1DHpZgGYjAL0QKIWBEpNiTpakhSY9Rhfygr6a1JgoYUAFJLEUBuiQImSiQPoRHMUB1ogXVESABtFyxgRUh0g3RgWYB0SxlATSC5rRAeYdxLRKCFCZ9PeLAuQdIkYxMcDByOabHCBvHTbcmRSYXTVWhBtTA7Ps3gn2rOmBUX67a3zVK8oD24YznoQrGRGQuMg+T3qgwuyu+J2BbiC/IVAv/PmCgI2Zgc7j95pGvvUO16QFuaeAFn2dkU9bzH6c7hlFir+/WkbLA7U/sd5Hw8M00s1eIq/xUs+DmJ/6NxfQe+7mDVbohjs1Gutsyx1ai2228EziCwshY100a/D29kv9A9BRftNS1kHVAAAAAElFTkSuQmCC" alt="line" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <p>Copyright © 2020 Glasses.All rights reserved.</p>
+      <ul class="footer-policy-list">
+        <li><a href="#">隱私權政策</a></li>
+        <li><a href="#">服務條款</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    
+  </body>
+</html>
