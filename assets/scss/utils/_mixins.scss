@@ -1,0 +1,32 @@
+@mixin pad {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin text-hide {
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+}
+@mixin bg($url, $size, $position, $height) {
+  background-image: url($url);
+  background-size: $size;
+  background-position: $position;
+  background-repeat: no-repeat;
+  height: $height;
+}
+@mixin home-block-bg {
+  padding: 80px 0;
+  @include mobile() {
+    padding: 40px 0;
+  }
+}
+@mixin px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}

@@ -1,0 +1,33 @@
+a {
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease-out;
+  &:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.bg-primary {
+  background-color: $color-primary;
+}
+.home-block-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: $color-secondary;
+  margin-bottom: 48px;
+  @include mobile() {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,43 @@
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  @include pad() {
+    max-width: 720px;
+  }
+
+  @include mobile() {
+    max-width: 373px;
+  }
+}
+
+.row {
+  margin-left: -12px;
+  margin-right: -12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through 12 {
+  .col-#{ $i } {
+    width: calc(($i / 12) * 100%);
+    @include px-3;
+  }
+}
+@include pad() {
+  @for $i from 1 through 12 {
+    .col-lg-#{ $i } {
+      width: calc(($i / 12) * 100%);
+      @include px-3;
+    }
+  }
+}
+@include mobile() {
+  @for $i from 1 through 12 {
+    .col-md-#{ $i } {
+      width: calc(($i / 12) * 100%);
+      @include px-3;
+    }
+  }
+}

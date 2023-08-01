@@ -1,0 +1,31 @@
+@include pad() {
+  .mb-lg-6 {
+    margin-bottom: 24px;
+  }
+}
+@include mobile() {
+  .mb-md-4 {
+    margin-bottom: 16px;
+  }
+}
+.mx-auto {
+  margin: 0 auto;
+}
+@include pad() {
+  .d-lg-none {
+    display: none;
+  }
+}
+@include mobile() {
+  .d-md-none {
+    display: none !important;
+  }
+}
+.d-none {
+  display: none;
+}
+@include pad() {
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+}

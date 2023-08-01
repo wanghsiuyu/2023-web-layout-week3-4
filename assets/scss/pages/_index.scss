@@ -1,3 +1,218 @@
-.index-title {
-  font-size: 100px;
+//banner
+.banner-bg {
+  @include bg("../images/home-header.png", cover, center, calc(100vh - 80px));
+  @include pad() {
+    height: 787px;
+    background-image: url("../images/home-header-sm.png");
+  }
+  @include mobile() {
+    height: 396px;
+  }
+}
+.banner {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+.banner-plan {
+  text-align: right;
+  color: $color-secondary;
+  h3 {
+    font-size: 36px;
+    @include mobile() {
+      font-size: 16px;
+    }
+  }
+  h2 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    @include mobile() {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+  }
+  a {
+    display: inline-block;
+    font-size: 20px;
+    padding: 6px 12px;
+    background-color: $color-primary;
+    color: white;
+  }
+}
+//feature
+.feature {
+  @include home-block-bg;
+  background-color: $color-third;
+  h2 {
+    margin-bottom: 24px;
+  }
+}
+.feature-card {
+  li {
+    text-align: center;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 16px;
+  }
+  h3 {
+    font-size: 24px;
+    color: $color-secondary;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  p {
+    text-align: left;
+  }
+}
+//classic
+.classic {
+  @include home-block-bg;
+}
+.classic-card {
+  display: flex;
+  gap: 24px;
+  @include pad() {
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    width: 416px;
+    height: 416px;
+    margin-bottom: 8px;
+    @include pad() {
+      width: 336px;
+      height: 336px;
+    }
+    @include mobile() {
+      width: 348px;
+      height: 348px;
+    }
+  }
+  h3 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+    color: $color-primary;
+  }
+}
+//design
+.design {
+  @include bg("../images/index-bg-md.png", cover, center, auto);
+  @include home-block-bg;
+  h2 {
+    color: white;
+  }
+}
+.design-card {
+  display: flex;
+  flex-wrap: wrap;
+  @include pad() {
+    gap: 24px;
+  }
+  li {
+    width: 50%;
+    @include pad() {
+      width: 100%;
+    }
+  }
+  h3 {
+    background-color: white;
+    padding: 8px 0;
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    color: $color-primary;
+  }
+}
+.design-doubleA {
+  @include bg("../images/home-section4-1.png", cover, center, 240px);
+  @include mobile() {
+    background-image: url("../images/home-section4-1-sm.png");
+  }
+}
+.design-youth {
+  @include bg("../images/home-section4-2.png", cover, center, 240px);
+  @include mobile() {
+    background-image: url("../images/home-section4-2-sm.png");
+  }
+}
+//comment
+.comment {
+  @include home-block-bg;
+}
+.comment-card {
+  justify-content: center;
+  .box-shadow {
+    box-shadow: 0 2px 6px #00000029;
+    border-radius: 4px;
+  }
+  img {
+    width: 100%;
+    height: 306px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 205px;
+    padding: 16px;
+  }
+  .card-text {
+    margin-bottom: auto;
+    p {
+      margin-bottom: 8px;
+    }
+    ~ p {
+      font-size: 14px;
+      color: #707070;
+    }
+  }
+}
+//contact
+.contact {
+  @include home-block-bg;
+  background-color: $color-third;
+}
+.contact-text {
+  margin-bottom: 24px;
+}
+.form-contact {
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 6px 12px;
+    margin-bottom: 16px;
+    background-color: $color-third;
+    border: 1px solid black;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.2);
+    }
+  }
+  textarea {
+    height: 136px;
+    resize: none;
+  }
+}
+.form-check {
+  margin-bottom: 48px;
+}
+.confirm-btn {
+  text-align: center;
+  a {
+    padding: 16px 0;
+    background-color: $color-primary;
+    color: white;
+    font-weight: bold;
+  }
 }

@@ -1,16 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <link rel="shortcut icon" href="../assets/images/logo-white-bgRed.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>眼鏡形象官網</title>
   </head>
+
   <body>
     <%- include('./layout/header'); -%>
+    <main>
+      <section class="banner-bg">
+        <div class="container banner">
+          <div class="banner-plan">
+            <h3>Promise-Desert 2020 早春系列</h3>
+            <h2>看得清，才能看得遠</h2>
+            <a href="product-optical.html">立即購買</a>
+          </div>
+        </div>
+      </section>
 
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+      <section class="feature">
+        <div class="container">
+          <h2 class="home-block-title">用專業的心，做專業的事</h2>
+          <ul class="feature-card row">
+            <li class="col-3 col-lg-6 col-md-12 mb-lg-6">
+              <img
+                src="../assets/images/home-section2-1.png"
+                alt="feature-price"
+              />
+              <h3>單一價格</h3>
+              <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+            </li>
+            <li class="col-3 col-lg-6 col-md-12 mb-lg-6">
+              <img
+                src="../assets/images/home-section2-2.png"
+                alt="feature-fast"
+              />
+              <h3>20 分鐘即可取件</h3>
+              <p>
+                為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快
+                20 分鐘即可完成。
+              </p>
+            </li>
+            <li class="col-3 col-lg-6 col-md-12 mb-lg-6">
+              <img
+                src="../assets/images/home-section2-3.png"
+                alt="feature-service"
+              />
+              <h3>安心售後服務</h3>
+              <p>
+                我們提供長達 120
+                天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+              </p>
+            </li>
+            <li class="col-3 col-lg-6 col-md-12">
+              <img
+                src="../assets/images/home-section2-4.png"
+                alt="feature-glasses"
+              />
+              <h3>關於鏡片</h3>
+              <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="classic">
+        <div class="container">
+          <h2 class="home-block-title">經典系列鏡框</h2>
+          <ul class="classic-card">
+            <li>
+              <a href="#">
+                <img
+                  src="../assets/images/home-section3-1.png"
+                  alt="classic-optical"
+                />
+                <h3>OPTICAL</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="../assets/images/home-section3-2.png"
+                  alt="classic-sunglasses"
+                />
+                <h3>SUNGLASSES</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="../assets/images/home-section3-3.png"
+                  alt="classic-functional"
+                />
+                <h3>FUNCTIONAL</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="design">
+        <div class="container">
+          <h2 class="home-block-title">聯名設計鏡框</h2>
+          <ul class="design-card row">
+            <li>
+              <a href="#">
+                <div class="design-doubleA"></div>
+                <h3>DOUBLE A+</h3>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="design-youth"></div>
+                <h3>YOUTH</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="comment">
+        <div class="container">
+          <h2 class="home-block-title">顧客推薦</h2>
+          <ul class="comment-card row">
+            <li class="col-3 col-lg-6 col-md-12 mb-lg-6 mb-md-4">
+              <div class="box-shadow">
+                <img
+                  src="../assets/images/home-section5-1.png"
+                  alt="customer"
+                />
+                <div class="card-body">
+                  <div class="card-text">
+                    <p>Jessy</p>
+                    <p>眼鏡品質優良，下次還會想來這邊購買！</p>
+                  </div>
+                  <p>2021/06/20</p>
+                </div>
+              </div>
+            </li>
+            <li class="col-3 col-lg-6 col-md-12 mb-lg-6 mb-md-4">
+              <div class="box-shadow">
+                <img
+                  src="../assets/images/home-section5-2.png"
+                  alt="customer"
+                />
+                <div class="card-body">
+                  <div class="card-text">
+                    <p>凱倫</p>
+                    <p>
+                      做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
+                    </p>
+                  </div>
+                  <p>2021/06/20</p>
+                </div>
+              </div>
+            </li>
+            <li class="col-3 col-lg-6 col-md-12 mb-lg-6 mb-md-4">
+              <div class="box-shadow">
+                <img
+                  src="../assets/images/home-section5-3.png"
+                  alt="customer"
+                />
+                <div class="card-body">
+                  <div class="card-text">
+                    <p>悠悠</p>
+                    <p>
+                      謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
+                    </p>
+                  </div>
+                  <p>2021/06/20</p>
+                </div>
+              </div>
+            </li>
+            <li class="col-3 col-lg-6 col-md-12">
+              <div class="box-shadow">
+                <img
+                  src="../assets/images/home-section5-4.png"
+                  alt="customer"
+                />
+                <div class="card-body">
+                  <div class="card-text">
+                    <p>Kyuan</p>
+                    <p>服務很好，品質沒有任何問題，非常喜歡。</p>
+                  </div>
+                  <p>2021/06/20</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-10 col-md-12 mx-auto">
+              <h2 class="home-block-title">聯絡我們</h2>
+              <p class="contact-text">
+                我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+              </p>
+              <form>
+                <div class="form-contact">
+                  <label for="name">姓名</label>
+                  <input type="text" id="name" placeholder="陳小明" />
+                  <label for="tel">聯絡電話</label>
+                  <input type="tel" id="tel" placeholder="0912-345-678" />
+                  <label for="mail">電子郵件</label>
+                  <input
+                    type="mail"
+                    id="mail"
+                    placeholder="example@email.com"
+                  />
+                  <label for="comment">意見反應</label>
+                  <textarea
+                    id="comment"
+                    placeholder="請輸入您的意見"
+                  ></textarea>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" name="" id="policy" />
+                  <label for="policy"
+                    >我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="confirm-btn col-4 col-lg-6 col-md-12 mx-auto">
+              <a href="#">確認送出</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <%- include('./layout/footer'); -%>
 

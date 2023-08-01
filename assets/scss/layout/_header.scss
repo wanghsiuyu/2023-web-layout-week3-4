@@ -1,4 +1,48 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mobile() {
+    flex-direction: column;
+    align-items: start;
+    height: 180px;
+  }
+}
+.header-logo {
+  @include text-hide;
+  @include bg("../../../assets/images/logo-white.png", contain, center, 80px);
+  width: 80px;
+}
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  @include mobile() {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+  }
+  li {
+    text-align: center;
+    @include mobile() {
+      width: 50%;
+      border: 1px solid white;
+    }
+    a {
+      padding: 25px 32px;
+      color: white;
+      font-size: 20px;
+      @include mobile() {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 16px;
+      }
+    }
+    &:last-child a {
+      padding-right: 0;
+      @include mobile() {
+        padding-right: 32px;
+      }
+    }
+  }
 }

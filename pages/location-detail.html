@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/logo-white-bgRed.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>眼鏡形象官網</title>
+  </head>
+
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main>
+      <div class="page-bg">
+        <div class="container">
+          <h2 class="page-title">門市據點</h2>
+          <div class="row">
+            <div class="col-4 col-lg-8 col-md-12">
+              <div class="select-city">
+                <label for="city">選擇分店</label>
+                <select id="city">
+                  <option value="台北中山旗艦店">台北中山旗艦店</option>
+                  <option value="台北綠園店">台北綠園店</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5 col-lg-12 mb-lg-6">
+              <div class="row">
+                <img
+                  src="../assets/images/store-1.png"
+                  alt="store"
+                  class="col-12 col-lg-6 col-md-12"
+                />
+                <div class="col-12 col-lg-6 col-md-12">
+                  <h3 class="location-card-title">台北中山旗艦店</h3>
+                  <div class="location-card-body">
+                    <p>
+                      <span class="material-symbols-outlined"> call </span>
+                      <span>電話：(02)000-1234</span>
+                    </p>
+                    <p>
+                      <span class="material-symbols-outlined"> schedule </span>
+                      <span>營業時間：10:00-21:00</span>
+                    </p>
+                    <p>
+                      <span class="material-symbols-outlined">
+                        location_on
+                      </span>
+                      <span>地址：台北市中山區南京東路25巷2-1號</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-7 col-lg-12">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4621319262237!2d121.5255254760299!3d25.052321237552317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9665c221fab%3A0xe3c1d49711f01596!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUx6Jmf!5e0!3m2!1szh-TW!2stw!4v1690814536631!5m2!1szh-TW!2stw"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="location-map"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

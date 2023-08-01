@@ -1,0 +1,138 @@
+.product-tab {
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  li {
+    width: 33.33%;
+    text-align: center;
+    border-left: 1px solid #dcdcdc;
+    &:last-child {
+      border-right: 1px solid #dcdcdc;
+    }
+  }
+  a {
+    padding: 24px 0 16px;
+    font-size: 32px;
+    font-weight: 500;
+    color: black;
+    &:hover {
+      border-bottom: 8px solid $color-primary;
+      transform: none;
+    }
+    @include pad() {
+      font-size: 24px;
+      padding: 16px 0 8px;
+    }
+    @include mobile() {
+      font-size: 16px;
+    }
+  }
+}
+.product-tab-active {
+  border-bottom: 8px solid $color-primary;
+}
+.product-optical-banner {
+  display: flex;
+  li {
+    width: 50%;
+  }
+  .first {
+    @include bg("../images/product-header-1.png", cover, center, 296px);
+    background-image: url("../images/product-header-sm-1.png");
+    @include mobile() {
+      height: 136px;
+    }
+  }
+  .second {
+    @include bg("../images/product-header-2.png", cover, center, 296px);
+    background-image: url("../images/product-header-sm-2.png");
+    @include mobile() {
+      height: 136px;
+    }
+  }
+}
+.product-main {
+  padding: 80px 0;
+  text-align: center;
+  @include mobile() {
+    padding: 40px 0 64px;
+  }
+  h2 {
+    margin-bottom: 32px;
+    @include mobile() {
+      margin-bottom: 24px;
+    }
+  }
+}
+.product-title-eng {
+  font-size: 42px;
+  font-weight: 500;
+  @include mobile() {
+    font-size: 24px;
+  }
+}
+.product-title-chi {
+  font-size: 32px;
+  font-family: "Noto Sans TC", sans-serif;
+  @include mobile() {
+    font-size: 24px;
+  }
+}
+.product-list {
+  row-gap: 80px;
+  margin-bottom: 80px;
+  @include pad() {
+    row-gap: 40px;
+  }
+  @include mobile() {
+    row-gap: 24px;
+    margin-bottom: 64px;
+  }
+}
+.product-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  .number {
+    color: black;
+  }
+  .price {
+    color: $color-primary;
+    font-weight: 500;
+  }
+}
+.product-color {
+  display: flex;
+  gap: 8px;
+  span {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+  .purple {
+    background-color: #5f3e2d;
+  }
+  .red {
+    background-color: #b75929;
+  }
+}
+.product-sunglasses-banner {
+  display: flex;
+  li {
+    width: 50%;
+  }
+  .first {
+    @include bg("../images/product-header-3.png", cover, center, 296px);
+    background-image: url("../images/product-header-sm-3.png");
+    @include mobile() {
+      height: 136px;
+    }
+  }
+  .second {
+    @include bg("../images/product-header-4.png", cover, center, 296px);
+    background-image: url("../images/product-header-sm-4.png");
+    @include mobile() {
+      height: 136px;
+    }
+  }
+}
