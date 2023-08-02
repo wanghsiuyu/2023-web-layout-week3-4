@@ -10,7 +10,7 @@
 }
 .header-logo {
   @include text-hide;
-  @include bg("../../../assets/images/logo-white.png", contain, center, 80px);
+  @include bg("../images/logo-white.png", contain, center, 80px);
   width: 80px;
 }
 .header-menu {
